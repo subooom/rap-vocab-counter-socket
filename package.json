@@ -1,0 +1,25 @@
+{
+  "name": "rap-vocab-counter-socket",
+  "version": "1.0.0",
+  "description": "This is rap vocab counter. It counts unique words from a artists' catalouge of songs and rank them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subooom/rap-vocab-counter-socket.git"
+  },
+  "keywords": [
+    "rap",
+    "vocabulary",
+    "counter",
+    "hiphop"
+  ],
+  "author": "Subham Kharel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subooom/rap-vocab-counter-socket/issues"
+  },
+  "homepage": "https://github.com/subooom/rap-vocab-counter-socket#readme"
+}
