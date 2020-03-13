@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/subooom/rap-vocab-counter-socket.git"
   },
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*"
+  },
   "keywords": [
     "rap",
     "vocabulary",
