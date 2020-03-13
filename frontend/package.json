@@ -1,0 +1,25 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "antd": "^4.0.2",
+    "fs": "0.0.1-security",
+    "fs-react": "0.0.4",
+    "js-cookie": "^2.2.1",
+    "next": "9.3.0",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "socket.io": "^2.3.0",
+    "unique-words": "^2.0.1"
+  }
+}

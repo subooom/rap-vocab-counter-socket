@@ -1,18 +1,19 @@
 {
   "name": "rap-vocab-counter-socket",
   "version": "1.0.0",
-  "description": "This is rap vocab counter. It counts unique words from a artists' catalouge of songs and rank them.",
-  "main": "index.js",
+  "description": "This is rap vocab counter. It counts unique words from a artists' catalogue of songs and rank them.",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/subooom/rap-vocab-counter-socket.git"
+    "url": "https://github.com/subooom/rap-vocab-counter-socket.git"
   },
   "dependencies": {
-    "socket.io": "*",
-    "express": "*"
+    "express": "*",
+    "mongodb": "^3.5.5",
+    "socket.io": "*"
   },
   "keywords": [
     "rap",

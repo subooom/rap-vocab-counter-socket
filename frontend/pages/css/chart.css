@@ -1,0 +1,8 @@
+.top-ten-list-item{
+  cursor: pointer;
+  transition: all .2s ease-in
+}
+
+.top-ten-list-item:hover{
+  background: #e9e9e9;
+}
