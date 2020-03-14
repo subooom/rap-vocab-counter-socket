@@ -11,7 +11,7 @@ class Home extends React.Component {
     var scene = document.getElementById('scene');
     var parallaxInstance = new Parallax(scene, {
       relativeInput: true,
-      friction: .9
+      frictionY: .1
     });
   }
   render() {
@@ -23,9 +23,9 @@ class Home extends React.Component {
 
           </div>
           <div data-relative-input="true" id="scene" style={{position: 'absolute', bottom:'300px', right: 0, left: 0}} >
-            <h2 data-depth="0.7" style={{margin:20, color: '#0058c5'}}>SUBHAM KHAREL</h2>
-            <h1 data-depth="0.1" style={{margin:20, color: '#0058c5'}}>RAP VOCAB COUNTER</h1>
-            <p  data-depth="0.9"  style={{fontWeight: 500, color: '#0058c5', marginBottom: 40, marginTop: 150}}>THIS IS A TOOL TO ADD LYRICS TO A SONG AND SEE THE NUMBER OF UNIQUE WORDS PER ARTISTS.</p>
+            <h2 data-depth="0.4" style={{margin:20, color: '#0058c5'}}>SUBHAM KHAREL</h2>
+            <h1 data-depth="0.9" style={{margin:20, color: '#0058c5'}}>RAP VOCAB COUNTER</h1>
+            <p  data-depth="0.96"  style={{fontWeight: 500, color: '#0058c5', marginBottom: 40, marginTop: 150}}>THIS IS A TOOL TO ADD LYRICS TO A SONG AND SEE THE NUMBER OF UNIQUE WORDS PER ARTISTS.</p>
 
           </div>
         </div>
