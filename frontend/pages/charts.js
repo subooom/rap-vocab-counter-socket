@@ -5,9 +5,7 @@ import { fetchTopTen } from './actions/topTenAction'
 
 const Leaderboard = (props) => {
   useEffect(() => {
-    props.fetchTopTen()
-
-      console.log(props)
+    props.topTen === undefined ? props.fetchTopTen() : '';
   }, [props]);
   return (
     <div>
@@ -17,9 +15,9 @@ const Leaderboard = (props) => {
         <h2 style={{fontSize: 80, margin: '40px 0 0 0', color:'#0058c5' }}>CHARTS</h2>
         <p style={{lineHeight: 0, fontWeight: 500, color: '#0058c5', marginBottom: 40}}>MAXIMUM NUMBER OF WORDS PER ARTIST</p>
 
-        <div className="top-ten-list" style={{width:'100%', padding: 20}}>
+        <div className="top-ten-list" style={{width:'100%', padding: 20, display:'flex', flexDirection: 'column',}}>
           {
-            props['topTen'] ? props['topTen'].map((artist, index)=>(
+            props['topTen'] ? props['topTen'].length != 0 ? props['topTen'].map((artist, index)=>(
               <div className="top-ten-list-item"  style={{display:'grid', gridTemplateColumns: "1fr 2fr 2fr 1fr 1fr", alignItems:'center', justifyContent:'center', borderBottom: '1px solid #f1f1f1', paddingTop: 20, paddingBottom: 20}}>
                 <div><h3 style={{textAlign:'center'}}>{index+1}</h3></div>
                 <div style={{display:'flex', alignItems:'center'}}>
@@ -30,10 +28,11 @@ const Leaderboard = (props) => {
                   <h3>{artist['words']}</h3>
                 </div>
                 <div>
-                  20 songs on site.
+                  {artist['songs_on_site']} songs on site.
                 </div>
               </div>
-            )) : 'No data yet.'
+            )) :
+      <div class="sp sp-3balls" style={{alignSelf:'center'}}></div> : ''
           }
 
         </div>

@@ -39,10 +39,9 @@ io.sockets.on('connection', function(socket) {
   // find vocab with artist name
   socket.on('find vocabs', function(artist) {
     mongo.connect(function(db){
-      mongo.findDocumentsByColumnName(db, 'tracks', function() {
-        return this.name === artist.slug
-     }, function(data) {
+      mongo.findDocuments(db, 'tracks', function(data) {
         io.sockets.emit('vocabs found', {msg: data})
+
       })
     })
   })

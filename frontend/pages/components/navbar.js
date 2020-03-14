@@ -29,8 +29,8 @@ export default class navbar extends Component {
   render(){
     return (
       <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
-        <Menu.Item key="about" disabled>
-          Rap Vocab Counter
+        <Menu.Item key="about" >
+          <Link href="/"><a>Rap Vocab Counter</a></Link>
         </Menu.Item>
         <Menu.Item key="leaderboard">
           <GiftOutlined />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './components/navbar';
 import Form from './components/addArtistForm';
-// import { Carousel } from 'antd';
+import { Carousel } from 'antd';
 import io from "socket.io-client";
 import { connect } from 'react-redux';
 import { fetchArtists } from './actions/artistsAction'
@@ -24,7 +24,18 @@ const Artists = (props) => {
   return (
     <div>
       <Navbar></Navbar>
-      <Form></Form>
+
+      <Carousel afterChange={onChange}>
+        <div>
+
+          <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', width:'100%'}}>
+            <h2 style={{fontSize: 80, margin: '40px 0 0 0', color:'#0058c5' }}>ARTISTS</h2>
+            <p style={{lineHeight: 0, fontWeight: 500, color: '#0058c5', marginBottom: 40}}>ADD ARTISTS</p>
+
+          </div>
+            <Form></Form>
+        </div>
+      </Carousel>
       <div className="registered-artists">
         <div style={{    display: 'grid', gridTemplateColumns: 'repeat(6,1fr)', width: '100%', alignItems: 'center', justifyContent: 'center'}} className="artist">
           <h3>Registered Artists</h3>

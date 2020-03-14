@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Input, Button, Checkbox } from 'antd';
-import { Typography } from 'antd';
+import { Form, Input, Button } from 'antd';
 import { slugger } from './../utils/slugger';
 import io from "socket.io-client";
 
 
-const { Title } = Typography;
 
 const formItemLayout = {
   labelCol: {
@@ -46,8 +44,6 @@ const AddArtistForm = () => {
   };
   return (
     <Form form={form} name="dynamic_rule" style={{marginTop:100}}>
-
-      <Title style={{marginLeft:250}}>Add Artist</Title><small  style={{position:'absolute', left:530, top:'170px'}}>v0.1</small>
 
       <Form.Item
         {...formItemLayout}

@@ -13,10 +13,15 @@ export default function Tracks() {
       <Navbar></Navbar>
 
       <Carousel afterChange={onChange}>
-      <Form></Form>
-      <div>subham kharel</div>
-        <Form></Form>
+      <div>
 
+        <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', width:'100%'}}>
+          <h2 style={{fontSize: 80, margin: '40px 0 0 0', color:'#0058c5' }}>TRACKS</h2>
+          <p style={{lineHeight: 0, fontWeight: 500, color: '#0058c5', marginBottom: 40}}>ADD TRACKS TO AN ARTISTS' VOCAB</p>
+
+        </div>
+          <Form></Form>
+      </div>
       </Carousel>
     </div>
   )

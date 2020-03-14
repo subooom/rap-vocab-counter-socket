@@ -58,8 +58,6 @@ const AddVocabularyForm = (props) => {
   return (
     <Form form={form} name="dynamic_rule" style={{marginTop:100}}>
 
-      <Title style={{marginLeft:250}}>Add Vocabulary</Title><small  style={{position:'absolute', left:530, top:'170px'}}>v0.1</small>
-
       <Form.Item
         {...formItemLayout}
         name="artist"
